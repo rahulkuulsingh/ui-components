@@ -63,13 +63,40 @@
         opacity: 0.8;
       }
 
+      .deals-card-group {
+        display: flex;
+        gap: 20px;
+        padding: 24px;
+      }
+
       .card {
         width: 180px;
-        background: #242586;
+        background: #181827;
         border-radius: 16px;
         display: flex;
         flex-direction: column;
         padding: 24px;
+        position: relative;
+      }
+
+      .emphasised {
+        background: #242586;
+      }
+
+      .highlight:before {
+        content: "Best price";
+        display: flex;
+        height: 24px;
+        width: fit-content;
+        background: #a0e0b2;
+        color: #10101c;
+        padding: 2px 16px;
+        border-radius: 16px;
+        align-items: center;
+        position: absolute;
+        margin: 0 auto;
+        top: -12px;
+        left: 25%;
       }
 
       h3.card-title {
@@ -85,6 +112,12 @@
         line-height: 32px;
         margin-bottom: 16px;
         padding: 8px;
+      }
+
+      .price-tag span {
+        font-size: 12px;
+        display: block;
+        opacity: 0.6;
       }
 
       .card-footer {
@@ -117,7 +150,27 @@
           <h3 class="card-title">Get .biz domain with 45% off</h3>
           <p class="price-tag">$4.88/yr</p>
           <div class="card-footer">
-            <a href="#" class="link-button">Get Started</a>
+            <a href="#" class="link-button">Get started</a>
+          </div>
+        </div>
+        <div class="card highlight">
+          <h3 class="card-title">.IO</h3>
+          <p class="price-tag">
+            $4.88/yr
+            <span>instead of $32.89/yr</span>
+          </p>
+          <div class="card-footer">
+            <a href="#" class="link-button">Get offer</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">.SO</h3>
+          <p class="price-tag">
+            $4.88/yr
+            <span>instead of $32.89/yr</span>
+          </p>
+          <div class="card-footer">
+            <a href="#" class="link-button">Get offer</a>
           </div>
         </div>
       </div>
